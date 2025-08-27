@@ -20,6 +20,7 @@ export class IpBlacklistService implements OnModuleInit {
     'https://raw.githubusercontent.com/vakhov/fresh-proxy-list/refs/heads/master/proxylist.txt',
     'https://raw.githubusercontent.com/vakhov/fresh-proxy-list/refs/heads/master/socks5.txt',
     'https://raw.githubusercontent.com/vakhov/fresh-proxy-list/refs/heads/master/socks4.txt',
+    'https://check.torproject.org/torbulkexitlist',
   ];
 
   constructor(private readonly httpService: HttpService) {}

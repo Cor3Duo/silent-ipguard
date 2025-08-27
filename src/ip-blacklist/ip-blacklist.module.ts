@@ -4,10 +4,16 @@ import { IpBlacklistService } from './ip-blacklist.service';
 import { HttpModule } from '@nestjs/axios';
 import { IpRiskService } from './ip-risk.service';
 import { AsnAnalysisService } from './asn-analysis.service';
+import { VersionInterceptor } from './version.interceptor';
 
 @Module({
   imports: [HttpModule],
   controllers: [IpBlacklistController],
-  providers: [IpBlacklistService, IpRiskService, AsnAnalysisService],
+  providers: [
+    IpBlacklistService,
+    IpRiskService,
+    AsnAnalysisService,
+    VersionInterceptor,
+  ],
 })
 export class IpBlacklistModule {}
